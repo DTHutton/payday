@@ -5,61 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paycheck</title>
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Kaushan+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 
 <body>
+    <header>
+        <a href="/">
+            <h1 class="title">Payday</h1>
+        </a>
+        <ul class="nav-links">
+            <li class="nav-links-item">
+                <a href="https://github.com/DTHutton/payday" rel="noopener noreferrer" target="_blank">
+                    Project Repo
+                </a>
+            </li>
+            <li class="nav-links-item">
+                <a href="https://github.com/DTHutton" rel="noopener noreferrer" target="_blank">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </header>
 
-    <form action="" method="get" class="form-container">
-        <div class="form-item">
-            <label for="paycheck">Paycheck Amount</label>
-            <input type="text" id="paycheck" required pattern="^\d*(\.\d{0,2})?$" />
-        </div>
-        <div class="form-item">
-            <label for="bills">Bills Total</label>
-            <input type="text" id="bills" required pattern="^\d*(\.\d{0,2})?$" />
-        </div>
-        <div class="form-item">
-            <label for="joint">Joint Account %</label>
-            <input type="text" id="joint" required pattern="^\d*(\.\d{0,2})?$" />
-        </div>
-        <div class="form-item">
-            <label for="savings">Savings Account %</label>
-            <input type="text" id="savings" required pattern="^\d*(\.\d{0,2})?$" />
-        </div>
-        <div class="form-item form-buttons">
-            <input type="submit" />
-            <input type="reset">
-        </div>
-    </form>
+    <main>
+        <form action="" method="get" class="form-container">
+            <div class="form-item">
+                <label for="paycheck">Paycheck Amount</label>
+                <input type="text" id="paycheck" required pattern="^\d*(\.\d{0,2})?$" />
+            </div>
+            <div class="form-item">
+                <label for="bills">Bills Total</label>
+                <input type="text" id="bills" required pattern="^\d*(\.\d{0,2})?$" />
+            </div>
+            <div class="form-item">
+                <label for="joint">Joint Account %</label>
+                <input type="text" id="joint" required pattern="^\d*(\.\d{0,2})?$" />
+            </div>
+            <div class="form-item">
+                <label for="savings">Savings Account %</label>
+                <input type="text" id="savings" required pattern="^\d*(\.\d{0,2})?$" />
+            </div>
+            <div class="form-item form-buttons">
+                <input type="submit" />
+                <input type="reset">
+            </div>
+        </form>
 
-    <div class="burrito hide">
-        <section class="results-container">
-            <div class="results-item">
-                <div class="results-item-title">Paycheck</div>
-                <div class="results-item-value" id="paycheckResults">$0.00</div>
-            </div>
-            <div class="results-item">
-                <div class="results-item-title">Bills Total</div>
-                <div class="results-item-value" id="billsResults">$0.00</div>
-            </div>
-            <div class="results-item">
-                <div class="results-item-title">Joint Account</div>
-                <div class="results-item-value" id="jointResults">$0.00</div>
-            </div>
-            <div class="results-item">
-                <div class="results-item-title">Savings Account</div>
-                <div class="results-item-value" id="savingsResults">$0.00</div>
-            </div>
-            <div class="results-item">
-                <div class="results-item-title">Spending Money</div>
-                <div class="results-item-value" id="spendingResults">$0.00</div>
-            </div>
-        </section>
+        <div class="results hide">
+            <section class="results-container">
+                <div class="results-item">
+                    <div class="results-item-title">Paycheck</div>
+                    <div class="results-item-value" id="paycheckResults">$0.00</div>
+                </div>
+                <div class="results-item">
+                    <div class="results-item-title">Bills Total</div>
+                    <div class="results-item-value" id="billsResults">$0.00</div>
+                </div>
+                <div class="results-item">
+                    <div class="results-item-title">Joint Account</div>
+                    <div class="results-item-value" id="jointResults">$0.00</div>
+                </div>
+                <div class="results-item">
+                    <div class="results-item-title">Savings Account</div>
+                    <div class="results-item-value" id="savingsResults">$0.00</div>
+                </div>
+                <div class="results-item">
+                    <div class="results-item-title">Spending Money</div>
+                    <div class="results-item-value" id="spendingResults">$0.00</div>
+                </div>
+            </section>
 
-        <button id="recalculate">Recalculate</button>
-    </div>
+            <button id="recalculate">Recalculate</button>
+        </div>
+    </main>
 
+    <footer>Footer</footer>
     <script src="./src/index.js"></script>
 </body>
 

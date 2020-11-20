@@ -4,7 +4,6 @@
   "description": "Simple app that calculates how much of each paycheck goes to which account because I'm too lazy to do it myself.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --port 3000"
   },
   "keywords": [],
