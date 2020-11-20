@@ -1,5 +1,5 @@
 {
-  "name": "paycheck",
+  "name": "payday",
   "version": "1.0.0",
   "description": "Simple app that calculates how much of each paycheck goes to which account because I'm too lazy to do it myself.",
   "main": "index.js",
