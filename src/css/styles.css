@@ -1,0 +1,104 @@
+header {
+    border-bottom: blue solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-shrink: 0;
+    height: 75px;
+    font-family: var(--font-title);
+}
+
+.title {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+    transition: font-size .1s;
+}
+
+.nav-links {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-links-item {
+    padding: 1.5em;
+    margin: 0 .2em;
+    transition: font-size .1s;
+}
+
+.nav-links-item:hover {
+    font-size: 1.1em;
+    transition: font-size .2s;
+}
+
+.nav-links-item>a, header>a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links-item>a, header>a:visited {
+    color: inherit;
+}
+
+main {
+    min-height: calc(100vh - 105px);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: baseline;
+    padding: 2em;
+}
+
+.form-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: .3em 0;
+}
+
+.form-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+hr {
+    margin: 2em 0;
+}
+
+.results-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.results-item {
+    margin: 2em;
+}
+
+button {
+    display: table;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+    padding: 1px 0;
+}
