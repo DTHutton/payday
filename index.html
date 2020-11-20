@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paycheck</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+
+    <form action="" method="get" class="form-container">
+        <div class="form-item">
+            <label for="paycheck">Paycheck Amount</label>
+            <input type="text" id="paycheck" required pattern="^\d*(\.\d{0,2})?$" />
+        </div>
+        <div class="form-item">
+            <label for="bills">Bills Total</label>
+            <input type="text" id="bills" required pattern="^\d*(\.\d{0,2})?$" />
+        </div>
+        <div class="form-item">
+            <label for="joint">Joint Account %</label>
+            <input type="text" id="joint" required pattern="^\d*(\.\d{0,2})?$" />
+        </div>
+        <div class="form-item">
+            <label for="savings">Savings Account %</label>
+            <input type="text" id="savings" required pattern="^\d*(\.\d{0,2})?$" />
+        </div>
+        <div class="form-item form-buttons">
+            <input type="submit" />
+            <input type="reset">
+        </div>
+    </form>
+
+    <hr />
+    <div class="burrito hide">
+        <section class="results-container">
+            <div class="results-item">
+                <div class="results-item-title">Paycheck</div>
+                <div class="results-item-value" id="paycheckResults">$0.00</div>
+            </div>
+            <div class="results-item">
+                <div class="results-item-title">Bills Total</div>
+                <div class="results-item-value" id="billsResults">$0.00</div>
+            </div>
+            <div class="results-item">
+                <div class="results-item-title">Joint Account</div>
+                <div class="results-item-value" id="jointResults">$0.00</div>
+            </div>
+            <div class="results-item">
+                <div class="results-item-title">Savings Account</div>
+                <div class="results-item-value" id="savingsResults">$0.00</div>
+            </div>
+            <div class="results-item">
+                <div class="results-item-title">Spending Money</div>
+                <div class="results-item-value" id="spendingResults">$0.00</div>
+            </div>
+        </section>
+
+        <button id="recalculate">Recalculate</button>
+    </div>
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
