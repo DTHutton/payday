@@ -6,4 +6,4 @@ Simple app that calculates how much of each paycheck goes to which account becau
 
 ## Tech
 
-Right now, the project is straight vanilla JS/CSS. The only dependency I use is [browser-sync](https://browsersync.io/) for development.
+Right now, the project is straight vanilla JS/CSS/HTML. The only dependency I use is [browser-sync](https://browsersync.io/) for development.
